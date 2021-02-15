@@ -47,7 +47,7 @@ My home automation system is mainly based on [ZWave](https://z-wavealliance.org/
    sudo nano currentcost2mqtt.py
    ```
 
-  You have to replace the text between quotes with the correct values for your configuration:
+	You have to replace the text between quotes with the correct values for your configuration:
   
   - **COM_PORT**: Something like /dev/ttyUSB0 or COM1 or /dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0;
   - **MQTT_Host**: The IP Address of the MQTT broker;
