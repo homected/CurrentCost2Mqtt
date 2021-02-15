@@ -49,16 +49,16 @@ My home automation system is mainly based on [ZWave](https://z-wavealliance.org/
 
 	You have to replace the text between quotes with the correct values for your configuration:
   
-  - **COM_PORT**: Something like /dev/ttyUSB0 or COM1 or /dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0;
-  - **MQTT_Host**: The IP Address of the MQTT broker;
-  - **MQTT_Port**: Port of the MQTT broker, for example 1883;
-  - **MQTT_User**: Username to authenticate into the MQTT broker;
-  - **MQTT_Password**: Password to authenticate into the MQTT broker;
-  - **MQTT_Topic**: The topic of the MQTT broker where publish the data;
-  - **MQTT_QoS**: Quality of Service level (0, 1 or 2);
-  - **MQTT_Retain**: True for retain MQTT messages of False for not retain;
+  	- **COM_PORT**: Something like /dev/ttyUSB0 or COM1 or /dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0;
+  	- **MQTT_Host**: The IP Address of the MQTT broker;
+  	- **MQTT_Port**: Port of the MQTT broker, for example 1883;
+  	- **MQTT_User**: Username to authenticate into the MQTT broker;
+  	- **MQTT_Password**: Password to authenticate into the MQTT broker;
+  	- **MQTT_Topic**: The topic of the MQTT broker where publish the data;
+  	- **MQTT_QoS**: Quality of Service level (0, 1 or 2);
+  	- **MQTT_Retain**: True for retain MQTT messages of False for not retain;
 
-  Save and close the file with: Control+O, Enter, Control+X
+  	Save and close the file with: Control+O, Enter, Control+X
   
   
 2. Optionally, you can set this program runs automatically when the raspberry boots with these commands:
@@ -78,13 +78,13 @@ My home automation system is mainly based on [ZWave](https://z-wavealliance.org/
    python3 currentcost2mqtt.py
    ```
 
-If you set the program to run after boots, reboot the raspberry with this command:
+	If you set the program to run after boots, reboot the raspberry with this command:
 
    ```sh
    sudo reboot
    ```
    
-After boot, you can control the process with these commands:
+	After boot, you can control the process with these commands:
 
    ```sh
    sudo systemctl start currentcost2mqtt
