@@ -10,10 +10,10 @@ COM_PORT = "INSERT_COM_PORT_HERE"			# Something like /dev/ttyUSB0 or COM1 or /de
 MQTT_Host = "INSERT_BROKER_IP_HERE"			# IP Address of the MQTT broker
 MQTT_Port = "INSERT_PORT_HERE"				# Port of the MQTT broker, for example 1883
 MQTT_User = "INSERT_USERNAME_HERE"			# Username to authenticate into the MQTT broker
-MQTT_Password = "INSERT_PASSWORD_HERE"		# Password to authenticate into the MQTT broker
+MQTT_Password = "INSERT_PASSWORD_HERE"			# Password to authenticate into the MQTT broker
 MQTT_Topic = "INSERT_TOPIC_HERE"			# Topic for publish data
-MQTT_QoS = 0								# Quality Of Service level (0, 1 or 2)
-MQTT_Retain = True							# Retain flag (True or False)
+MQTT_QoS = 0						# Quality Of Service level (0, 1 or 2)
+MQTT_Retain = True					# Retain flag (True or False)
 
 def get_data(port=COM_PORT, verbose=False):
 	# port: the port that the CurrentCost meter is attached to. Something like /dev/ttyUSB0 or COM1 or /dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0
