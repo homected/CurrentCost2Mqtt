@@ -96,9 +96,9 @@ My home automation system is mainly based on [ZWave](https://z-wavealliance.org/
 
 The values of the energy monitor will be published under the topic set in **MQTT_Topic** inside the program file and these are the published endpoints:
 
-	- **Monitor temperature**: **MQTT_Topic**/CurrentCost/Temperature
-	- **Total power**: **MQTT_Topic**/CurrentCost/Power/Total/chX, where X is the channel number (1, 2 or 3).
-	- **Appliance power**: **MQTT_Topic**/CurrentCost/Power/ApplianceY/ChX, where Y is the appliance number (1 to 9) and X is the channel number (1, 2 or 3).
+- **Monitor temperature**: **MQTT_Topic**/CurrentCost/Temperature
+- **Total power**: **MQTT_Topic**/CurrentCost/Power/Total/chX, where X is the channel number (1, 2 or 3).
+- **Appliance power**: **MQTT_Topic**/CurrentCost/Power/ApplianceY/ChX, where Y is the appliance number (1 to 9) and X is the channel number (1, 2 or 3).
 
 ## Home Assistant
 
@@ -107,19 +107,19 @@ To get the values of the energy monitor in Home Assistant, enter a sensor entry 
    ```yaml
    sensor:
      - platform: mqtt
-       state_topic: "**MQTT_Topic**/CurrentCost/Temperature"
+       state_topic: "MQTT_Topic/CurrentCost/Temperature"
        name: "currentcost_temperature"
        unit_of_measurement: "°C"
        value_template: '{{ value_json.state }}'
 
      - platform: mqtt
-       state_topic: "**MQTT_Topic**/CurrentCost/Power/Total/Ch1"
+       state_topic: "MQTT_Topic/CurrentCost/Power/Total/Ch1"
        name: "currentcost_totalpower"
        unit_of_measurement: "W"
        value_template: '{{ value_json.state }}'
     
      - platform: mqtt
-       state_topic: "**MQTT_Topic**/CurrentCost/Power/Appliance1/Ch1"
+       state_topic: "MQTT_Topic/CurrentCost/Power/Appliance1/Ch1"
        name: "currentcost_power1"
        unit_of_measurement: "W"
        value_template: '{{ value_json.state }}'
