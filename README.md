@@ -104,7 +104,7 @@ The values of the energy monitor will be published under the topic set in **MQTT
 
 To get the values of the energy monitor in Home Assistant, enter a sensor entry for each monitored value in your configuration.yaml file:
 
-   ```sh
+   ```yaml
    sensor:
      - platform: mqtt
        state_topic: "**MQTT_Topic**/CurrentCost/Temperature"
