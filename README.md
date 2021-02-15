@@ -100,7 +100,7 @@ The values of the energy monitor will be published under the topic set in **MQTT
 - **Total power**: *MQTT_Topic*/CurrentCost/Power/Total/chX, where X is the channel number (1, 2 or 3).
 - **Appliance power**: *MQTT_Topic*/CurrentCost/Power/ApplianceY/ChX, where Y is the appliance number (1 to 9) and X is the channel number (1, 2 or 3).
 
-## Home Assistant
+### Home Assistant
 
 To get the values of the energy monitor in Home Assistant, enter a sensor entry for each monitored value in your configuration.yaml file:
 
