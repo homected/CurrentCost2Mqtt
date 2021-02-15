@@ -1,6 +1,6 @@
 ![currentcost logo](logo.png)
 # CurrentCost2Mqtt
-A gateway to publish [Current Cost](http://www.currentcost.com) energy monitor values to a MQTT broker.
+A gateway to publish [Current Cost](http://www.currentcost.com) energy monitor values to an MQTT broker.
 
 ## Credits
 First of all I have to say Thanks to [lolouk44](https://github.com/lolouk44) and [Robin Wilson](http://blog.rtwilson.com/how-to-log-electricity-usage-from-a-currentcost-envir-part-1/) for the code my program is based on.
