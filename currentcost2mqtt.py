@@ -8,7 +8,7 @@ import paho.mqtt.client as mqtt
 
 COM_PORT = "INSERT_COM_PORT_HERE"			# Something like /dev/ttyUSB0 or COM1 or /dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller-if00-port0
 MQTT_Host = "INSERT_BROKER_IP_HERE"			# IP Address of the MQTT broker
-MQTT_Port = "INSERT_PORT_HERE"				# Port of the MQTT broker, for example 1883
+MQTT_Port = INSERT_PORT_HERE				# Port of the MQTT broker, for example 1883
 MQTT_User = "INSERT_USERNAME_HERE"			# Username to authenticate into the MQTT broker
 MQTT_Password = "INSERT_PASSWORD_HERE"			# Password to authenticate into the MQTT broker
 MQTT_Topic = "INSERT_TOPIC_HERE"			# Topic for publish data
