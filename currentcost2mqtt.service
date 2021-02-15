@@ -1,0 +1,12 @@
+[Unit]
+Description=CurrentCost to MQTT Service
+After=multi-user.target
+	
+[Service]
+Type=idle
+WorkingDirectory=/home/pi/
+User=pi
+ExecStart=/usr/bin/python3 /home/pi/currentcost2mqtt/currentcost2mqtt.py
+	
+[Install]
+WantedBy=multi-user.target
