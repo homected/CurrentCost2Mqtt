@@ -109,7 +109,6 @@ while(True):
 			elif ((CCData[2] == 2) | (CCData[2] == 3) | (CCData[2] == 4)):
 				print ("Temperature: " + str(CCData[0]) + " °C - Sensor " + str(CCData[1]) + " Impulse per unit: " + str(CCData[4]) + " - Impulse count: " + str(CCData[3]))
 				client.publish(MQTT_Topic + '/CurrentCost/Meter/Sensor' + str(CCData[1]), '{"state":"' + str(CCData[3]) + '","Impulse_per_unit":' + str(CCData[4]) + '}', qos=MQTT_QoS, retain=MQTT_Retain)
-				answer = str(round(answer, 2))
 
 	except:
 		pass
